@@ -11,7 +11,7 @@ class Orders(models.Model):
         return f"{self.order_code, self.date, self.id_seller, self.id_channel}"
 
 
-class OrdersProdcut(models.Model):
+class OrdersProduct(models.Model):
     id_product = models.PositiveIntegerField(null=False)
     id_orders = models.PositiveIntegerField(null=False)
 
